@@ -1,5 +1,5 @@
-
-... coming soon ...
+<script src='https://code.jquery.com/jquery-3.2.1.js'/>
+<script src='/js/jquery.adaptive-backgrounds.js'/>
 ---
 <div>
 {% for image in site.static_files %}
@@ -9,3 +9,8 @@
 {% endfor %}
 </div>
 ---
+<script>
+$(document).ready(function(){
+  $.adaptiveBackground.run();
+});
+</script>
