@@ -1,5 +1,5 @@
-<script src='https://code.jquery.com/jquery-3.2.1.js'/>
-<script src='/js/jquery.adaptive-backgrounds.js'/>
+<script src='https://code.jquery.com/jquery-3.2.1.js'></script>
+<script src='/js/jquery.adaptive-backgrounds.js'></script>
 ---
 <div>
 {% for image in site.static_files %}
