@@ -3,7 +3,7 @@
 <div>
 {% for image in site.static_files %}
     {% if image.path contains 'assets/img' %}
-<div>
+<div align='center'>
         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" data-adaptive-background/>
 </div>
     {% endif %}
