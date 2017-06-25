@@ -1,8 +1,9 @@
 
 ... coming soon ...
 ---
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files %}
-  {{ myimage.path }}
+{% for image in site.static_files %}
+    {% if image.path contains 'assets/img' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
 {% endfor %}
 ---
